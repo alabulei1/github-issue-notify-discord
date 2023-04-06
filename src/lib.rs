@@ -62,7 +62,7 @@ async fn handler(
             let label_name = label.name.to_lowercase();
             if lowercase_list.contains(&label_name) {
                 let body = format!(
-                    "A good first issue: {issue_title} by {user}\n 
+                    "Check out the GitHub issues that you can help: {issue_title} by {user}\n 
                     {issue_url}"
                 );
                 create_text_message_in_channel(guild_name, channel_name, body, None);
