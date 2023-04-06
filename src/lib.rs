@@ -4,12 +4,18 @@ use github_flows::{listen_to_event, EventPayload};
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
-    let login = "jaykchen";
-    let owner = "jaykchen";
-    let repo = "a-test";
-    let label_watch_list = vec!["good first issue".to_string()];
-    let guild_name = "myserver";
-    let channel_name = "general";
+    let login = "alabulei";
+    let owner = "WasmEdge";
+    let repo = "WasmEdge";
+    let label_watch_list = vec![
+        "good first issue".to_string(),
+        "help wanted".to_string(),
+        "LFX mentorship".to_string(),
+        "OSPP".to_string(),
+        "Hacktoberfest".to_string(),
+    ];
+    let guild_name = "WasmEdge";
+    let channel_name = "contributor";
 
     listen_to_event(
         login,
