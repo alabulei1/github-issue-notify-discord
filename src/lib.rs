@@ -4,7 +4,7 @@ use github_flows::{listen_to_event, EventPayload};
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
-    let login = "alabulei";
+    let login = "alabulei1";
     let owner = "WasmEdge";
     let repo = "WasmEdge";
     let label_watch_list = vec![
