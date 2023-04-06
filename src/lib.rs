@@ -15,7 +15,7 @@ pub async fn run() {
         "Hacktoberfest".to_string(),
     ];
     let guild_name = "WasmEdge";
-    let channel_name = "contributor";
+    let channel_name = "contributors👏";
 
     listen_to_event(
         login,
