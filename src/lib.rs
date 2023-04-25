@@ -44,11 +44,6 @@ async fn handler(
         EventPayload::IssuesEvent(e) => {
             issue = Some(e.issue);
         }
-
-        EventPayload::IssueCommentEvent(e) => {
-            issue = Some(e.issue);
-        }
-
         _ => (),
     }
 
