@@ -6,9 +6,9 @@ use github_flows::{listen_to_event, EventPayload,
 #[no_mangle]
 #[tokio::main(flavor = "current_thread")]
 pub async fn run() {
-    let login = "jaykchen";
-    let owner = "jaykchen";
-    let repo = "a-test";
+    let login = "alabulei1";
+    let owner = "WasmEdge";
+    let repo = "WasmEdge";
     let label_watch_list = vec![
         "good first issue".to_string(),
         "help wanted".to_string(),
@@ -16,7 +16,7 @@ pub async fn run() {
         "OSPP".to_string(),
         "Hacktoberfest".to_string(),
     ];
-    let guild_name = "myserver";
+    let guild_name = "Vivian Hu's server";
     let channel_name = "general";
 
     listen_to_event(
